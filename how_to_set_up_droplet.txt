@@ -10,3 +10,4 @@ CREATE USER portfoliouser WITH PASSWORD 'django1234';
 
 ALTER ROLE portfoliouser SET client_encoding TO 'utf8';
 ALTER ROLE portfoliouser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE portfoliouser SET timezone TO 'Asia/Tokyo';
