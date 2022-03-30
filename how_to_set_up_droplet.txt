@@ -19,3 +19,6 @@ GRANT ALL PRIVILEGES ON DATABASE portfoliodb TO portfoliouser;
 
 // Check connection to portfoliodb
 $ sudo -u postgres psql -d portfoliodb
+
+// Copy project to server from local (On Local)
+$ scp -r portfolio reisuke@***.***.***.***:/home/reisuke/
