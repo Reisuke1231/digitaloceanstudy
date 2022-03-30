@@ -135,8 +135,31 @@ $ sudo systemctl restart gunicorn
 // Check status gunicorn
 $ sudo systemctl status gunicorn
 
-// Configure settings
+// Turn off debug mode
 $ vim portfolio/settings.py
 -- settings.py --
 DEBUG = False
 -- end settings.py --
+
+// Configure Nginx to proxy pass to gunicorn
+$ sudo vim /etc/nginx/sites-available/portfolio
+--
+server {
+    listen 80;
+    server_name 128.199.178.98;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/reisuke/portfolio;
+    }
+
+    location /media/ {
+        root /home/reisuke/portfolio;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+}
+--
