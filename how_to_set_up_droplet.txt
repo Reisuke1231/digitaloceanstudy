@@ -82,3 +82,21 @@ ACCESS: https://***.***.***.***:8000
 
 // Run by gunicorn
 $ gunicorn --bind 0.0.0.0:8000 portfolio.wsgi
+Ctrl + c
+
+// Deactivate virtual development environment
+$ deactivate
+
+// Edit gunicorn.socket
+$ sudo vim /etc/systemd/system/gunicorn.socket
+-- gunicorn.socket --
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+-- end gunicorn.socket --
+
