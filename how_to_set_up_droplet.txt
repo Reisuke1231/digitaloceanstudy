@@ -13,3 +13,5 @@ ALTER ROLE portfoliouser SET default_transaction_isolation TO 'read committed';
 ALTER ROLE portfoliouser SET timezone TO 'Asia/Tokyo';
 
 GRANT ALL PRIVILEGES ON DATABASE portfoliodb TO portfoliouser;
+
+\q
