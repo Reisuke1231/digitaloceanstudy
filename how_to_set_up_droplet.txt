@@ -2,3 +2,8 @@ $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
 
+$ sudo -u postgres psql
+
+-- Postgres --
+CREATE DATABASE portfoliodb;
+CREATE USER portfoliouser WITH PASSWORD 'django1234';
