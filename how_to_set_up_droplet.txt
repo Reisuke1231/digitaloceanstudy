@@ -134,3 +134,9 @@ $ sudo systemctl restart gunicorn
 
 // Check status gunicorn
 $ sudo systemctl status gunicorn
+
+// Configure settings
+$ vim portfolio/settings.py
+-- settings.py --
+DEBUG = False
+-- end settings.py --
