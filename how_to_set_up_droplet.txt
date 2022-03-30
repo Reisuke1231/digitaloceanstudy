@@ -131,3 +131,6 @@ $ sudo systemctl daemon-reload
 
 // Restart gunicorn
 $ sudo systemctl restart gunicorn
+
+// Check status gunicorn
+$ sudo systemctl status gunicorn
