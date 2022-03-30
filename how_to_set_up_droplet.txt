@@ -121,3 +121,7 @@ ExecStart=/home/reisuke/venv/bin/gunicorn \
 [Install]
 WantedBy=multi-user.target
 -- end gunicorn.service --
+
+// Start gunicorn
+$ sudo systemctl start gunicorn.socket
+$ sudo systemctl enable gunicorn.socket
