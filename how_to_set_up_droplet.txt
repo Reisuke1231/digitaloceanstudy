@@ -27,3 +27,5 @@ $ scp -r portfolio reisuke@***.***.***.***:/home/reisuke/
 $ chmod -R 755 portfolio
 
 $ sudo -H pip3 install virtualenv
+
+$ virtualenv venv
