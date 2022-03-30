@@ -69,3 +69,9 @@ $ python manage.py createsuperuser
 
 // Collect static files to /home/reisuke/portfolio/static
 $ python manage.py collectstatic
+
+// Allow access via port 8000
+$ sudo ufw allow 8000
+[sudo] password for reisuke: *****
+Rules updated
+Rules updated (v6)
