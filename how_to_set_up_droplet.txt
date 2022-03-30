@@ -32,3 +32,6 @@ $ virtualenv venv
 
 // Activate virtual development environment
 $ source venv/bin/activate
+
+// gunicor: Web Server Gateway Interface (Http server) for Django , psycopg2: Library for Postgres
+$ pip install django gunicorn psycopg2-binary pillow
