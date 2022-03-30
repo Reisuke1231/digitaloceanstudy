@@ -100,3 +100,21 @@ ListenStream=/run/gunicorn.sock
 WantedBy=sockets.target
 -- end gunicorn.socket --
 
+// Edit gunicorn.service
+$ sudo vim /etc/systemd/system/gunicorn.service
+-- gunicorn.service --
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=reisuke
+Group=www-data
+WorkingDirectory=/home/reisuke/portfolio
+ExecStart=/home/reisuke/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          portfolio.wsgi:application
+-- end gunicorn.service --
