@@ -63,3 +63,6 @@ $ rm -r images
 
 // Migrate
 $ python manage.py migrate
+
+// Create super user
+$ python manage.py createsuperuser
