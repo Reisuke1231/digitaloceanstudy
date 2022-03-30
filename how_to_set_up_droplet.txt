@@ -8,4 +8,5 @@ $ sudo -u postgres psql
 CREATE DATABASE portfoliodb;
 CREATE USER portfoliouser WITH PASSWORD 'django1234';
 
-ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
+ALTER ROLE portfoliouser SET client_encoding TO 'utf8';
+ALTER ROLE portfoliouser SET default_transaction_isolation TO 'read committed';
