@@ -15,3 +15,7 @@ ALTER ROLE portfoliouser SET timezone TO 'Asia/Tokyo';
 GRANT ALL PRIVILEGES ON DATABASE portfoliodb TO portfoliouser;
 
 \q
+-- end Postgres --
+
+// Check connection to portfoliodb
+$ sudo -u postgres psql -d portfoliodb
