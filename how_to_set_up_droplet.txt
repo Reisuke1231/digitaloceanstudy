@@ -163,3 +163,6 @@ server {
     }
 }
 --
+
+// Create symlink
+$ sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled
