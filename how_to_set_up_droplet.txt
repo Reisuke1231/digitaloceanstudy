@@ -22,3 +22,6 @@ $ sudo -u postgres psql -d portfoliodb
 
 // Copy project to server from local (On Local)
 $ scp -r portfolio reisuke@***.***.***.***:/home/reisuke/
+
+// Change access privileges
+$ chmod -R 755 portfolio
