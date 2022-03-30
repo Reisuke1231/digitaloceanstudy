@@ -125,3 +125,6 @@ WantedBy=multi-user.target
 // Start gunicorn
 $ sudo systemctl start gunicorn.socket
 $ sudo systemctl enable gunicorn.socket
+
+// Check daemon
+$ sudo systemctl daemon-reload
