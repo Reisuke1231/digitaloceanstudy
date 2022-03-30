@@ -128,3 +128,6 @@ $ sudo systemctl enable gunicorn.socket
 
 // Check daemon
 $ sudo systemctl daemon-reload
+
+// Restart gunicorn
+$ sudo systemctl restart gunicorn
