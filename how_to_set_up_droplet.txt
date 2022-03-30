@@ -35,3 +35,24 @@ $ source venv/bin/activate
 
 // gunicor: Web Server Gateway Interface (Http server) for Django , psycopg2: Library for Postgres
 $ pip install django gunicorn psycopg2-binary pillow
+
+// Configure settings
+$ vim portfolio/portfolio/settings.py
+
+-- settings.py --
+
+ALLOWED_HOSTS = ['***.***.***.***']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfoliodb',
+        'USER': 'portfoliouser',
+        'PASSWORD': 'django1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+-- end settings.py --
