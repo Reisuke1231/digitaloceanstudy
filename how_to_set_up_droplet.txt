@@ -56,3 +56,7 @@ DATABASES = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 -- end settings.py --
+
+// Testing deployment
+$ cd portfolio
+$ rm -r images
