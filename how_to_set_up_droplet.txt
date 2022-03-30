@@ -25,3 +25,5 @@ $ scp -r portfolio reisuke@***.***.***.***:/home/reisuke/
 
 // Change access privileges
 $ chmod -R 755 portfolio
+
+$ sudo -H pip3 install virtualenv
