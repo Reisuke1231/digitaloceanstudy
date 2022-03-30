@@ -60,3 +60,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 // Testing deployment
 $ cd portfolio
 $ rm -r images
+
+// Migrate
+$ python manage.py migrate
