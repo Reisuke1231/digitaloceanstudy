@@ -75,3 +75,7 @@ $ sudo ufw allow 8000
 [sudo] password for reisuke: *****
 Rules updated
 Rules updated (v6)
+
+// Run server with port 8000
+$ python manage.py runserver 0.0.0.0:8000
+ACCESS: https://***.***.***.***:8000
