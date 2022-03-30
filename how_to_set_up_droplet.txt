@@ -175,3 +175,11 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 // Reboot to reflect changes
 $ sudo systemctl restart nginx
 $ sudo systemctl restart gunicorn
+
+// Switch to Nginx
+$ sudo ufw delete allow 8000
+Rules updated
+Rules updated (v6)
+$ sudo ufw allow 'Nginx Full'
+Rules updated
+Rules updated (v6)
