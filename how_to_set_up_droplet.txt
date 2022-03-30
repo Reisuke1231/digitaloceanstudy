@@ -117,4 +117,7 @@ ExecStart=/home/reisuke/venv/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
           portfolio.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
 -- end gunicorn.service --
