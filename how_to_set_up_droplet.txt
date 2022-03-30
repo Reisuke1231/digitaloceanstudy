@@ -79,3 +79,6 @@ Rules updated (v6)
 // Run server with port 8000
 $ python manage.py runserver 0.0.0.0:8000
 ACCESS: https://***.***.***.***:8000
+
+// Run by gunicorn
+$ gunicorn --bind 0.0.0.0:8000 portfolio.wsgi
